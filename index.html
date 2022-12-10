@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023년 버킷리스트</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500;600;700&display=swap');
+         *{
+            font-family: 'Hahmlet', serif;/* 앞에 *이 붙으면 전체 다 적용하겠다는 뜻 */
+         }
+        /* .을 붙이고 중괄호를 쓰면 지정을 한것임. */
+        .title {
+            color: white;
+            background-color: yellowgreen;
+            font-size: 30px;
+            padding: 8px 25px;
+            border-radius: 8px;
+            /*padding: 안쪽으로 얼마나 여백을 줄거냐.
+                첫번째 입력: 위아래
+                두번째 입력: 양옆*/
+        }
+
+        .bg {
+            width: 360px;
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png");
+        }
+
+        .msg {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .bucket {
+            width: 160px;
+            height: 160px;
+        }
+
+        .img1 {
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-red.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img2 {
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
+</head>
+
+<body class="bg-t5 center">
+    <!-- body는 뼈대 -->
+    <h1 class="title">2023 신년계획</h1>
+    <p class="msg">올해는 꼭 모두 지키자!</p>
+    <!-- p태그는 뼈대 -->
+    <div class="row flex-row wrap">
+        <div class="bucket img2-t5 center">모델링 공부해서<br>작품 하나 완성하기</div>
+        <!-- 완료했을경우 center옆에 done을 쓰면 도장이 찍힘 -->
+        <div class="bucket img3-t5 center">토익 700점 넘기기</div>
+        <div class="bucket img5-t5 center">일러스트 한장<br>제대로 완성하기</div>
+        <div class="bucket img1-t5 center">성적장학금 받기</div>
+        <div class="bucket img6-t5 center">JLPT 3급<br> 합격하기</div>
+        <div class="bucket img4-t5 center">비타민 챙겨먹기</div>
+    </div>
+
+    <!-- 각 박스는 div로 만듬 -->
+    <!-- 각 박스들을 모두 묶을 박스-->
+    <!-- 보기 좋게 정리하려면 shift + alt+ f -->
+    <!-- 이름표를 2개 붙일 수 있음 : 예)bucket img1 -->
+    <!-- 테마 커스터마이징 할 수 있게 몇몇 코드 넣어져있음
+        1. 클래스 이름 바꾸기(img1을 img1-t2로 (테마2))
+        2. 테마 바꾸기(bg-t3) 테마가 하나만 있는 건 아님-->
+</body>
+
+</html>
